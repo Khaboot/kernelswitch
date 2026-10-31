@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kernelswitch"
+version = "1.1.0"
+description = "Interactive GRUB kernel selection for Linux distributions"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+
+[project.scripts]
+kernelswitch = "kernelswitch:main"
+
+[tool.setuptools]
+py-modules = ["kernelswitch"]
